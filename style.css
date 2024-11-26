@@ -1,0 +1,95 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Легкий фон */
+    color: #333; /* Основной цвет текста */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    min-height: 100vh; /* Обеспечивает, что тело страницы занимает всю высоту экрана */
+}
+
+/* Стили для навигации */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed; /* Фиксируем шапку сверху */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Чтобы навигация была сверху */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Цвет при наведении */
+}
+
+/* Стили для основного контента */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px; /* Добавляем отступ сверху, чтобы контент не перекрывался шапкой */
+}
+
+.content-container {
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Стили для футера */
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Чтобы футер был сверху содержимого */
+}
